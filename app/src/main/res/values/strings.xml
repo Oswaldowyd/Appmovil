@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Paginamovil</string>
+    <string name="titulo">Mi primer aplicacion movil</string>
+    <string name="tunombre">Cual es tu nombre</string>
+    <string name="pulsar">Pulsame</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="cerrar">cerrar</string>
+    <string name="alumno">Oswaldo Sevilla</string>
+    <string name="matricula">22050438</string>
+    <string name="materia">Programacion Movil</string>
+    <string name="altura">Captura la altura</string>
+    <string name="peso">Captura el peso</string>
+    <string name="msj">Su resultado Aparece aqui</string>
+</resources>
