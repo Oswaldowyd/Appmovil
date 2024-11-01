@@ -9,6 +9,7 @@
     <string name="matricula">22050438</string>
     <string name="materia">Programacion Movil</string>
     <string name="desImacot">Logo Toyota</string>
+    <string name="imc">Calcula tu Imc</string>
     <string name="altura">Captura la altura</string>
     <string name="peso">Captura el peso</string>
     <string name="msj">Su resultado Aparece aqui</string>
@@ -21,4 +22,10 @@
     <string name="lblGrados">Grados</string>
     <string name="lblCantidad">Captura la Cantidad de Grados</string>
     <string name="cantidad">Cantidad</string>
+    <string name="app_name">IMC Calculator</string>
+    <string name="weight_hint">Peso en kg</string>
+    <string name="height_hint">Altura en cm</string>
+    <string name="calculate_button">Calcular IMC</string>
+    <string name="result_text">Tu IMC es: %.2f</string>
+    <string name="error_message">Por favor, ingresa peso y altura.</string>
 </resources>
