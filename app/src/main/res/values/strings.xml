@@ -20,4 +20,5 @@
     <string name="res">Resultado</string>
     <string name="lblGrados">Grados</string>
     <string name="lblCantidad">Captura la Cantidad de Grados</string>
+    <string name="cantidad">Cantidad</string>
 </resources>

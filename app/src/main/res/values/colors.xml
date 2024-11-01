@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="micolor">#D8004C</color>
+    <color name="miAzul">#0D3A5E</color>
     <color name="encabezado">#04223A</color>
     <color name="letraenc">#0D3A5E</color>
     <color name="practica">#D32B1E</color>
