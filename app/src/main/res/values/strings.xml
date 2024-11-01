@@ -8,7 +8,16 @@
     <string name="alumno">Oswaldo Sevilla</string>
     <string name="matricula">22050438</string>
     <string name="materia">Programacion Movil</string>
+    <string name="desImacot">Logo Toyota</string>
     <string name="altura">Captura la altura</string>
     <string name="peso">Captura el peso</string>
     <string name="msj">Su resultado Aparece aqui</string>
+    <string name="cel">Celsius a Fahrenheit</string>
+    <string name="far">Farenheit a Celsius</string>
+    <string name="btnLimpiar">Limpiar</string>
+    <string name="btnCerrar">Cerrar</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="res">Resultado</string>
+    <string name="lblGrados">Grados</string>
+    <string name="lblCantidad">Captura la Cantidad de Grados</string>
 </resources>
