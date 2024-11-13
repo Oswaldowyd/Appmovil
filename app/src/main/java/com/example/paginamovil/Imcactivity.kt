@@ -1,43 +1,72 @@
-package com.example.imccalculator
+package com.example.paginamovil
 
-import android.R
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.setPadding
 
 class MainActivity : AppCompatActivity() {
-    private var weightEditText: EditText? = null
-    private var heightEditText: EditText? = null
-    private var calculateButton: Button? = null
-    private var resultTextView: TextView? = null
+    private lateinit var txtPeso: EditText
+    private lateinit var txtAltura: EditText
+    private lateinit var btnCalcular: Button
+    private lateinit var btnLimpiar: Button
+    private lateinit var btnCerrar: Button
+    private lateinit var lblResultado: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        weightEditText = findViewById<EditText>(R.id.weightEditText)
-        heightEditText = findViewById<EditText>(R.id.heightEditText)
-        calculateButton = findViewById<Button>(R.id.calculateButton)
-        resultTextView = findViewById<TextView>(R.id.resultTextView)
+        iniciarComponentes()
+        eventosBotones()
 
-        calculateButton.setOnClickListener(View.OnClickListener { calculateBMI() })
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
     }
 
-    private fun calculateBMI() {
-        val weightString = weightEditText!!.text.toString()
-        val heightString = heightEditText!!.text.toString()
+    private fun iniciarComponentes() {
+        txtPeso = findViewById(R.id.txtPeso)
+        txtAltura = findViewById(R.id.txtAltura)
+        btnCalcular = findViewById(R.id.btnCalcular)
+        btnLimpiar = findViewById(R.id.btnLimpiar)
+        btnCerrar = findViewById(R.id.btnCerrar)
+        lblResultado = findViewById(R.id.lblResultado)
+    }
 
-        if (!weightString.isEmpty() && !heightString.isEmpty()) {
-            val weight = weightString.toDouble()
-            val height = heightString.toDouble() / 100 // Convertir de cm a metros
-            val bmi = weight / (height * height)
+    private fun eventosBotones() {
+        btnCalcular.setOnClickListener(View.OnClickListener {
+            val pesoString = txtPeso.text.toString()
+            val alturaString = txtAltura.text.toString()
 
-            resultTextView!!.text = String.format("Tu IMC es: %.2f", bmi)
-        } else {
-            resultTextView!!.text = "Por favor, ingresa peso y altura."
+            if (pesoString.isBlank() || alturaString.isBlank()) {
+                Toast.makeText(applicationContext, "Por favor, ingresa peso y altura.", Toast.LENGTH_SHORT).show()
+            } else {
+                val peso = pesoString.toDouble()
+                val altura = alturaString.toDouble() / 100  // Convertir altura de cm a metros
+                val imc = peso / (altura * altura)
+                lblResultado.text = String.format("Tu IMC es: %.2f", imc)
+            }
+        })
+
+        btnLimpiar.setOnClickListener {
+            txtPeso.setText("")
+            txtAltura.setText("")
+            lblResultado.text = ""
+        }
+
+        btnCerrar.setOnClickListener {
+            finish()
         }
     }
 }

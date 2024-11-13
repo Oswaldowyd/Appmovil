@@ -22,10 +22,22 @@
     <string name="lblGrados">Grados</string>
     <string name="lblCantidad">Captura la Cantidad de Grados</string>
     <string name="cantidad">Cantidad</string>
-    <string name="app_name">IMC Calculator</string>
-    <string name="weight_hint">Peso en kg</string>
-    <string name="height_hint">Altura en cm</string>
-    <string name="calculate_button">Calcular IMC</string>
-    <string name="result_text">Tu IMC es: %.2f</string>
-    <string name="error_message">Por favor, ingresa peso y altura.</string>
+    <string name="app_name">Calculadora de IMC</string>
+    <string name="peso_hint">Peso en kg</string>
+    <string name="altura_hint">Altura en cm</string>
+    <string name="calcular_boton">Calcular IMC</string>
+    <string name="texto_resultado">Tu IMC es: %.2f</string>
+    <string name="mensaje_error">Por favor, ingresa peso y altura.</string>
+    <string-array name="array_conversiones">
+        <item> Pesos Mexicanos - Dolares Americanos</item>
+        <item> Pesos Mexicanos - Dolares Canadienses</item>
+        <item> Pesos Mexicanos - Euros</item>
+        <item> Dolares Americanos - Pesos Mexicanos</item>
+        <item> Dolares Canadienses - Pesos Mexicanos</item>
+        <item> Euros - Pesos Mexicanos</item>
+    </string-array>
+    <string name="dolara">19.75</string>
+    <string name="dolarc">a14.75</string>
+    <string name="euro">22.02</string>
+
 </resources>

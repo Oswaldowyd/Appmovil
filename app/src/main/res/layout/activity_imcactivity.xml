@@ -5,34 +5,34 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/weightEditText"
+        android:id="@+id/pesoEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Peso en kg"
+        android:hint="@string/peso_hint"
         android:inputType="numberDecimal" />
 
     <EditText
-        android:id="@+id/heightEditText"
+        android:id="@+id/alturaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Altura en cm"
+        android:hint="@string/altura_hint"
         android:inputType="numberDecimal"
-        android:layout_below="@id/weightEditText"
+        android:layout_below="@id/pesoEditText"
         android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/calculateButton"
+        android:id="@+id/calcularBoton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular IMC"
-        android:layout_below="@id/heightEditText"
+        android:text="@string/calcular_boton"
+        android:layout_below="@id/alturaEditText"
         android:layout_marginTop="16dp" />
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultadoTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/calculateButton"
+        android:layout_below="@id/calcularBoton"
         android:layout_marginTop="16dp"
         android:textSize="18sp" />
 
