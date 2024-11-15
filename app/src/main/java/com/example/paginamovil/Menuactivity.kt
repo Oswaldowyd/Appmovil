@@ -1,8 +1,7 @@
-package com.example.paginamovil
+package com.example.applicationpatrick
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Telephony.Mms.Intents
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,36 +9,59 @@ import androidx.cardview.widget.CardView
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Menuactivity : AppCompatActivity() {
-    private lateinit var crvHola :CardView
-    private lateinit var crvImc :CardView
-    private lateinit var crvGrados :CardView
-    private lateinit var crvMoneda :CardView
-    private lateinit var crvCotizacion :CardView
-    private lateinit var crvSalir :CardView
+class MenuActivity : AppCompatActivity() {
+    private lateinit var crvHola : CardView;
+    private lateinit var crvIMC : CardView;
+    private lateinit var crvConvetidor : CardView;
+    private lateinit var crvConvertidor : CardView;
+    private lateinit var crvCotizacion : CardView;
+    private lateinit var crvSalida : CardView;
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_menuactivity)
-        iniciarComponentes()
-        eventosClic()
+        setContentView(R.layout.activity_menu)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        IniciarComponentes()
+        eventosClick()
     }
-    fun iniciarComponentes(){
+    fun IniciarComponentes(){
         crvHola = findViewById(R.id.crvHola) as CardView
-        crvImc = findViewById(R.id.crvImc) as CardView
-        crvGrados = findViewById(R.id.crvConvertir) as CardView
-        crvMoneda = findViewById(R.id.crvMoneda) as CardView
+        crvIMC = findViewById(R.id.crvIMC) as CardView
+        crvConvetidor = findViewById(R.id.crvConvetidor) as CardView
+        crvConvertidor = findViewById(R.id.crvConvertidor) as CardView
         crvCotizacion = findViewById(R.id.crvCotizacion) as CardView
-        crvSalir = findViewById(R.id.crvSalir) as CardView
+        crvSalida = findViewById(R.id.crvSalida) as CardView
     }
-    fun eventosClic(){
+    fun eventosClick(){
         crvHola.setOnClickListener(View.OnClickListener {
-            val intent = Intent(packageName:this,MainActivity::class.java)
-       startActivity(intent) })
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        })
+        crvIMC.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, ImcActivity::class.java)
+            startActivity(intent)
+        })
+        crvConvetidor.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, Convertidor::class.java)
+            startActivity(intent)
+        })
+        crvConvertidor.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, MonedasActivity::class.java)
+            startActivity(intent)
+        })
+
+        crvCotizacion.setOnClickListener(View.OnClickListener {
+            val intent = Intent(this, Cliente::class.java)
+            startActivity(intent)
+        })
+        crvSalida.setOnClickListener {
+            finish()
+        }
     }
 }

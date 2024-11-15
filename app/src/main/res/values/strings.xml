@@ -1,33 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Paginamovil</string>
-    <string name="titulo">Mi primer aplicacion movil</string>
-    <string name="tunombre">Cual es tu nombre</string>
-    <string name="pulsar">Pulsame</string>
-    <string name="limpiar">Limpiar</string>
-    <string name="cerrar">cerrar</string>
-    <string name="alumno">Oswaldo Sevilla</string>
-    <string name="matricula">22050438</string>
-    <string name="materia">Programacion Movil</string>
-    <string name="desImacot">Logo Toyota</string>
-    <string name="imc">Calcula tu Imc</string>
-    <string name="altura">Captura la altura</string>
-    <string name="peso">Captura el peso</string>
-    <string name="msj">Su resultado Aparece aqui</string>
-    <string name="cel">Celsius a Fahrenheit</string>
-    <string name="far">Farenheit a Celsius</string>
+    <string name="app_name">Mi Aplicación</string>
+    <string name="practica_1_saludo">Bienvenido a la Práctica 1</string>
+    <string name="txtNombre">Ingrese su nombre</string>
+    <string name="btnPulsar">Pulsar</string>
     <string name="btnLimpiar">Limpiar</string>
     <string name="btnCerrar">Cerrar</string>
-    <string name="btnCalcular">Calcular</string>
+    <string name="alumno">Oswaldo Alfredo Sevilla Vera</string>
+    <string name="matricula">22050438</string>
+    <string name="materia">programacion movil</string>
+    <string name="altura">Captura tu altura</string>
+    <string name="peso">Captura tu peso</string>
+    <string name="msj">Su resultado Aparece aqui¡</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="btn_calcular">Calcular</string>
+    <string name="far">Farenheid</string>
+    <string name="cel">Celcius</string>
+    <string name="cantidad">Ingresar Cantidad:</string>
+    <string name="btn_cerrar">Cerrar</string>
     <string name="res">Resultado</string>
-    <string name="lblGrados">Grados</string>
-    <string name="lblCantidad">Captura la Cantidad de Grados</string>
-    <string name="cantidad">Cantidad</string>
-    <string name="app_name">Calculadora de IMC</string>
-    <string name="peso_hint">Peso en kg</string>
-    <string name="altura_hint">Altura en cm</string>
-    <string name="calcular_boton">Calcular IMC</string>
-    <string name="texto_resultado">Tu IMC es: %.2f</string>
-    <string name="mensaje_error">Por favor, ingresa peso y altura.</string>
     <string-array name="array_conversiones">
         <item> Pesos Mexicanos - Dolares Americanos</item>
         <item> Pesos Mexicanos - Dolares Canadienses</item>
@@ -35,9 +26,22 @@
         <item> Dolares Americanos - Pesos Mexicanos</item>
         <item> Dolares Canadienses - Pesos Mexicanos</item>
         <item> Euros - Pesos Mexicanos</item>
+        <item>Terminar aplicación</item>
     </string-array>
     <string name="dolara">19.75</string>
-    <string name="dolarc">a14.75</string>
+    <string name="dolarc">14.75</string>
     <string name="euro">22.02</string>
+    <string name="domicilio">Av. del Mar 1200</string>
+    <string name="ciudad">Mazatlan Sinaloa</string>
+    <string name="marca">Toyota</string>
+    <string name="cliente">Nombre del Cliente</string>
+    <string name="folio">Num. Folio</string>
+    <string name="des">Descripcion del Automovil</string>
+    <string name="precio">Valor del Automovil</string>
+    <string name="po">Porcentaje del Pago inicial</string>
+    <string name="plazos">Plazos</string>
+    <string name="pmensual">Pago Mensual</string>
+    <string name="pinicial">Pago Inicial</string>
+    <string name="tfin">Total a Financiar</string>
 
 </resources>

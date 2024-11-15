@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Paginamovil"
         tools:targetApi="31">
         <activity
+            android:name=".Cliente"
+            android:exported="false" />
+        <activity
+            android:name=".activity_cotizador"
+            android:exported="false" />
+        <activity
             android:name=".MonedaActivity"
             android:exported="false" />
         <activity
